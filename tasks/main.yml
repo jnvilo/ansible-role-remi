@@ -1,0 +1,138 @@
+---
+- name: install epel
+  yum:
+    name: epel-release
+    state: latest
+
+- name: download and install the GPG key
+  get_url:
+    url: https://rpms.remirepo.net/RPM-GPG-KEY-remi
+    dest: /etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+
+
+- name: remi-glpi91.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-glpi91.repo.j2"
+    dest: /etc/yum.repos.d/remi-glpi91.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-glpi93.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-glpi93.repo.j2"
+    dest: /etc/yum.repos.d/remi-glpi93.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-modular.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-modular.repo.j2"
+    dest: /etc/yum.repos.d/remi-modular.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-php70.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-php70.repo.j2"
+    dest: /etc/yum.repos.d/remi-php70.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-php72.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-php72.repo.j2"
+    dest: /etc/yum.repos.d/remi-php72.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-php74.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-php74.repo.j2"
+    dest: /etc/yum.repos.d/remi-php74.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-safe.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-safe.repo.j2"
+    dest: /etc/yum.repos.d/remi-safe.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-glpi91.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-glpi91.repo.j2"
+    dest: /etc/yum.repos.d/remi-glpi91.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-glpi93.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-glpi93.repo.j2"
+    dest: /etc/yum.repos.d/remi-glpi93.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-modular.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-modular.repo.j2"
+    dest: /etc/yum.repos.d/remi-modular.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-php70.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-php70.repo.j2"
+    dest: /etc/yum.repos.d/remi-php70.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-php72.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-php72.repo.j2"
+    dest: /etc/yum.repos.d/remi-php72.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-php74.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-php74.repo.j2"
+    dest: /etc/yum.repos.d/remi-php74.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
+- name: remi-safe.repo
+  template:
+    src: "{{ role_path }}/templates/yum.repos.d/remi-safe.repo.j2"
+    dest: /etc/yum.repos.d/remi-safe.repo
+    mode: '0644'
+    owner: root
+    group: root
+
+
