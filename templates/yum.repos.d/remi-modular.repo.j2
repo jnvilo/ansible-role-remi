@@ -7,7 +7,8 @@ name=Remi's Modular repository for Enterprise Linux 7 - $basearch
 #baseurl=http://rpms.remirepo.net/enterprise/7/modular/$basearch/
 #mirrorlist=https://rpms.remirepo.net/enterprise/7/modular/httpsmirror
 mirrorlist=http://cdn.remirepo.net/enterprise/7/modular/mirror
-enabled=0
+enabled={% if modular %}1{%else%}0{%endif%}
+
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
 
