@@ -2,7 +2,7 @@ galaxy_info:
   author: jnvilo
   description: A role to manage and install remi repos.
   company: LNXSystems.com
-  role_name: jnvilo.remi
+  role_name: remi
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
