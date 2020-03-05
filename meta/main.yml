@@ -1,5 +1,5 @@
 galaxy_info:
-  author: Jason Viloria
+  author: jnvilo
   description: A role to manage and install remi repos.
   company: LNXSystems.com
   role_name: jnvilo.remi
